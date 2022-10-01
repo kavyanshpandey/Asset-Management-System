@@ -12,6 +12,7 @@
 </template>
 
 <script>
+//second screen component 
 import DashBoard from "./DashBoard.vue";
 export default {
     name : "SecondScreen",
