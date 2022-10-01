@@ -2,9 +2,20 @@
 This is basically a small application that I made in weekend.
 
 # Step to Run
-1. Clone this repo.
-2. npm install
-3. npm run serve
+
+* Clone the project
+    ```bash
+    git clone https://github.com/kavyanshpandey/Asset-Management-System.git
+    ```
+* Installing required files
+    ```bash
+    npm i
+    ```
+
+* Starting the server
+    ```bash
+    npm run serve
+    ```
 
 # Project Snaps
 ![alt text](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asm1pic.png)
