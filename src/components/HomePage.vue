@@ -19,6 +19,7 @@
 </template>
 
 <script>
+//modified login form 
 import LoginForm from './LoginForm.vue'
 export default {
     components: {
