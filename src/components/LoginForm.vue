@@ -20,44 +20,47 @@
           <el-input placeholder="username" v-model="username"></el-input>
         </el-form-item>
         <el-form-item label="password">
-          <el-input placeholder="password" v-model="password" type="password"></el-input>
+          <el-input
+            placeholder="password"
+            v-model="password"
+            type="password"
+          ></el-input>
         </el-form-item>
       </el-form>
       <button @click="login()">Log in</button>
     </div>
 
-    <div class="dhac">
-    </div>
+    <div class="dhac"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "LoginForm",
+  name: 'LoginForm',
   data() {
     return {
-      username :"",
-      password: ""
+      username: '',
+      password: ''
     }
   },
-  methods : {
+  methods: {
     login() {
-      if(this.username === 'asm_admin' && this.password === '9935asm') {
+      if (this.username === 'asm_admin' && this.password === '9935asm') {
         //Success Route - DashBoard
-        sessionStorage.setItem("loginSuccess", true);
-        this.$router.push({name : 'dashboard'})
+        sessionStorage.setItem('loginSuccess', true)
+        this.$router.push({ name: 'dashboard' })
       } else {
-         this.$notify.error({
+        this.$notify.error({
           title: 'Error',
           message: 'Invalid Credentials'
-        });
+        })
       }
     }
   },
   created() {
-    sessionStorage.setItem("loginSuccess", false)
+    sessionStorage.setItem('loginSuccess', false)
   }
-};
+}
 </script>
 
 <style scoped>
@@ -103,13 +106,13 @@ button:hover {
   animation-duration: 4s;
 }
 .dhac {
-  margin-left:17%;
+  margin-left: 17%;
   font-size: 14px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 a {
   text-decoration: none;
-  color:#3498db;
+  color: #3498db;
 }
 </style>

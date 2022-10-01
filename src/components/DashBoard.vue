@@ -70,121 +70,121 @@
 
 <script>
 export default {
-  name: "DashBoard",
+  name: 'DashBoard',
   data() {
     return {
       tableData: [
         {
           empID: 3928,
-          empName: "John",
-          systemAssigned: "Mac M1 16/256 GB",
+          empName: 'John',
+          systemAssigned: 'Mac M1 16/256 GB'
         },
         {
           empID: 3927,
-          empName: "Alexa",
-          systemAssigned: "Dell Inspiron 3593 16/512 GB",
+          empName: 'Alexa',
+          systemAssigned: 'Dell Inspiron 3593 16/512 GB'
         },
         {
           empID: 9887,
-          empName: "Siri",
-          systemAssigned: "Mac M1 16/256 GB",
-        },
+          empName: 'Siri',
+          systemAssigned: 'Mac M1 16/256 GB'
+        }
       ],
-      search: "",
+      search: '',
       centerDialogVisible: false,
-      empIDforDialoge: "",
-      empNameforDialoge: "",
-      systemforDialoge: "",
+      empIDforDialoge: '',
+      empNameforDialoge: '',
+      systemforDialoge: '',
       inStock: 89,
       distributed: 3,
-      edit: false,
-    };
+      edit: false
+    }
   },
   methods: {
     handleEdit(index, row) {
-      let data = (index, row);
-      (this.empIDforDialoge = data.empID),
+      let data = (index, row)
+      ;(this.empIDforDialoge = data.empID),
         (this.empNameforDialoge = data.empName),
-        (this.systemforDialoge = data.systemAssigned);
+        (this.systemforDialoge = data.systemAssigned)
 
-      this.edit = true;
-      this.centerDialogVisible = true;
+      this.edit = true
+      this.centerDialogVisible = true
     },
     handleDelete(index, row) {
-      let data = (index, row);
+      let data = (index, row)
       this.tableData = this.tableData.filter((rec) => {
-        return rec.empID !== data.empID;
-      });
-      this.inStock = this.inStock + 1;
-      this.distributed -= 1;
+        return rec.empID !== data.empID
+      })
+      this.inStock = this.inStock + 1
+      this.distributed -= 1
     },
     openAddDialogue() {
-      this.centerDialogVisible = true;
+      this.centerDialogVisible = true
     },
     addEntry() {
       if (this.edit) {
         for (let rec of this.tableData) {
           if (rec.empID === this.empIDforDialoge) {
-            (rec.empName = this.empNameforDialoge),
-              (rec.systemAssigned = this.systemforDialoge);
+            ;(rec.empName = this.empNameforDialoge),
+              (rec.systemAssigned = this.systemforDialoge)
             this.$notify({
-              title: "Success",
-              message: "Record successfully updated",
-              type: "success",
-            });
-            this.empIDforDialoge = "";
-            this.empNameforDialoge = "";
-            this.systemforDialoge = "";
-            this.centerDialogVisible = false;
-            break;
+              title: 'Success',
+              message: 'Record successfully updated',
+              type: 'success'
+            })
+            this.empIDforDialoge = ''
+            this.empNameforDialoge = ''
+            this.systemforDialoge = ''
+            this.centerDialogVisible = false
+            break
           }
         }
       } else {
         let tempEntry = {
           empID: this.empIDforDialoge,
           empName: this.empNameforDialoge,
-          systemAssigned: this.systemforDialoge,
-        };
+          systemAssigned: this.systemforDialoge
+        }
 
         if (
-          this.empIDforDialoge === "" ||
-          this.empNameforDialoge === "" ||
-          this.systemforDialoge === ""
+          this.empIDforDialoge === '' ||
+          this.empNameforDialoge === '' ||
+          this.systemforDialoge === ''
         ) {
           //Error
           this.$notify.error({
-            title: "Error",
-            message: "Please fill all entries",
-          });
-          this.centerDialogVisible = true;
+            title: 'Error',
+            message: 'Please fill all entries'
+          })
+          this.centerDialogVisible = true
         } else if (parseInt(this.inStock) <= 0) {
           this.$notify.error({
-            title: "Error",
+            title: 'Error',
             message:
-              "There is no item remain in stock, Please add some to perform distribution",
-          });
-          this.empIDforDialoge = "";
-          this.empNameforDialoge = "";
-          this.systemforDialoge = "";
+              'There is no item remain in stock, Please add some to perform distribution'
+          })
+          this.empIDforDialoge = ''
+          this.empNameforDialoge = ''
+          this.systemforDialoge = ''
         } else {
-          this.tableData.push(tempEntry);
-          this.inStock -= 1;
-          this.distributed += 1;
-          this.empIDforDialoge = "";
-          this.empNameforDialoge = "";
-          this.systemforDialoge = "";
+          this.tableData.push(tempEntry)
+          this.inStock -= 1
+          this.distributed += 1
+          this.empIDforDialoge = ''
+          this.empNameforDialoge = ''
+          this.systemforDialoge = ''
           this.$notify({
-            title: "Success",
-            message: "Entry has been added successfully",
-            type: "success",
-          });
-          this.centerDialogVisible = false;
+            title: 'Success',
+            message: 'Entry has been added successfully',
+            type: 'success'
+          })
+          this.centerDialogVisible = false
         }
       }
-    },
+    }
   },
-  created() {},
-};
+  created() {}
+}
 </script>
 
 <style scoped>

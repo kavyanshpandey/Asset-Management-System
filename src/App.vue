@@ -6,14 +6,13 @@
 
 <script>
 export default {
-  name: "App",
-  components: {
-  },
-};
+  name: 'App',
+  components: {}
+}
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
 #app {
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
