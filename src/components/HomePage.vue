@@ -2,30 +2,30 @@
   <div style="display: flex">
     <div class="container-left">
       <div class="tech-art">
-        <p>  AMS</p>
+        <p>AMS</p>
       </div>
       <div class="techart-quote">
         <p>Asset Management System</p>
-        <p style="font-size:15px;margin-top:60px;">One application that keep tracks of your organization assets<br/></p>
+        <p style="font-size: 15px; margin-top: 60px">
+          One application that keep tracks of your organization assets<br />
+        </p>
       </div>
-      <div style="margin-top:40px;">
-      </div>
+      <div style="margin-top: 40px"></div>
     </div>
     <div class="container-right">
-        <LoginForm />
+      <LoginForm />
     </div>
-    
   </div>
 </template>
 
 <script>
-//modified login form 
+//modified login form
 import LoginForm from './LoginForm.vue'
 export default {
-    components: {
-        LoginForm
-    }
-};
+  components: {
+    LoginForm
+  }
+}
 </script>
 
 <style scoped>
