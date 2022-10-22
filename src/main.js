@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI);
 Vue.use(VueRouter)
+//creating routes
 
 const routes =[
   {
