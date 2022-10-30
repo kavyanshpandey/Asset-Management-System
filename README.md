@@ -7,10 +7,13 @@ This is basically a small application that I made in weekend.
 3. npm run serve
 
 # Project Snaps
-![alt text](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asm1pic.png)
-![alt text](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic4.png)
-![alt text](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic2.png)
-![alt text](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic3.png)
+![asm pic1](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asm1pic.png)
+![asm pic2](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic4.png)
+![asm pic3](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic2.png)
+![asm pic4](https://github.com/kavyanshpandey/Asset-Management-System/blob/master/asmpic3.png)
 
 Feel free to contribute 🚀❤️
 
+# Contribute -
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
