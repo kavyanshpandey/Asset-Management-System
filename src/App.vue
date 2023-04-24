@@ -5,7 +5,7 @@
 </template>
 
 <script>
-//modified app
+//modified the app
 export default {
   name: "App",
   components: {
