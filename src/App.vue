@@ -6,6 +6,7 @@
 
 <script>
 //modified app
+//test command
 export default {
   name: "App",
   components: {
