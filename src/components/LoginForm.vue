@@ -17,10 +17,10 @@
     <div style="margin-top: 50px">
       <el-form>
         <el-form-item label="username">
-          <el-input placeholder="username" v-model="username"></el-input>
+          <el-input placeholder="Enter your username" v-model="username"></el-input>
         </el-form-item>
         <el-form-item label="password">
-          <el-input placeholder="password" v-model="password" type="password"></el-input>
+          <el-input placeholder="Enter your password" v-model="password" type="password"></el-input>
         </el-form-item>
       </el-form>
       <button @click="login()">Log in</button>
