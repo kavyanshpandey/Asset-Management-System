@@ -10,6 +10,8 @@ import LoginForm from './components/LoginForm'
 
 Vue.config.productionTip = false
 
+// Vue Rendering
+
 Vue.use(ElementUI);
 Vue.use(VueRouter)
 
