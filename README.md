@@ -17,3 +17,7 @@ Feel free to contribute 🚀❤️
 # Contribute -
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project, you agree to abide by its terms.
+
+# HacktoberFest Update
+
+This repo is the part of Hacktoberfest 2023. Feel free to push your changes 🚀
