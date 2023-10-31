@@ -2,6 +2,8 @@
 This is basically a small application that I made in weekend.
 
 # Step to Run
+
+Perform following step to run the application   
 1. Clone this repo.
 2. npm install
 3. npm run serve
